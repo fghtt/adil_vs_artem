@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+body{
+	overflow: hidden;
+}
+
+.buttons{
+	position: absolute;
+	z-index: 1;
+}
+
+.statistics{
+	position: absolute;
+	z-index: 1;
+	margin: 0 0 0 85%;
+}
+
+@keyframes statistics-animation{
+    0%{
+    	color: white;
+    }
+
+    50%{
+    	color: red;
+    }
+
+    100%{
+    	color: white;
+    }
+}
+.statistics h2{
+	display: inline;
+	margin: 0 0 0 10px;
+	color: white;
+	font-size: 30px;
+	animation: statistics-animation 2s infinite;
+}
+.score:after{
+	content: 'x';
+}
+
+.hp:after{
+	content: 'hp';
+}

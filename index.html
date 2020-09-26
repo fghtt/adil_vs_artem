@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+
+	<meta charset="utf-8">
+
+	<title>Artem vs Adil</title>
+    
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="buttons"> 
+		<button onmouseover="goForward( 'go' )" onmouseout="goForward( 'stop' )">Вперед</button>
+		<button onmouseover="goBack( 'go' )" onmouseout="goBack( 'stop' )">Назад</button>
+		<button onclick="jump()">Прыжок</button>
+		<button onclick="status( 'pause' )">Пауза</button>
+		<button onclick="shoot()">Выстрел</button>
+	</div>
+
+	<div class="statistics">
+		<h2 class="score"></h2>
+		<h2 class="hp"><h2>
+	</div>
+    
+    <canvas onclick="status( 'play' )"></canvas>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
